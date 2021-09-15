@@ -139,8 +139,12 @@ class EasyDict(dict):
             setattr(self, k, d[k])
 
     def pop(self, k, d=None):
-        delattr(self, k)
+        try:
+            delattr(self, k)
+        except AttributeError:
+            pass
         return super(EasyDict, self).pop(k, d)
+
 
 
 if __name__ == "__main__":
