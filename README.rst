@@ -2,8 +2,17 @@
 A Javascript-like properties dot notation for python dicts.
 
 =====
+ChangeLog
+=====
+2021-09-15, fixed a bug on pop() method
+
+
+
+=====
 USAGE
 =====
+
+
 
 ::
 
